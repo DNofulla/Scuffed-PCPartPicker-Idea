@@ -1,0 +1,269 @@
+/*The @media tag attributes are for responsive design and better functionality on mobile devices below a width of 575 pixels*/
+@media screen and (max-width: 575px) {
+
+    
+    .banner{
+        display: none;
+    }
+
+    .middle{
+        min-height: auto;
+        height: auto;
+    }
+
+    .pcparts-left{
+        display: none;
+    }
+
+
+    .pcparts-middle{
+        min-width: 90%;
+    }
+
+    .pcparts-right{
+        min-width: 90%;
+    }
+
+    table, th, td{
+        border: 1px solid goldenrod;
+    }
+}
+
+/*Attributes of the custom banner*/
+.banner{
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*This is the attributes for the div class responsible for the link to my own Step-By-Step tutorial!*/
+.left{
+    background-color: rgb(88, 2, 105);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+/*This is the attributes for the div class responsible for the link to the Youtube Tutorials*/
+.right{
+    background-color: rgb(25, 90, 8);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+
+/*This div simply acts as a container for the left and right div classes above*/
+.middle{
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+/*This is a horizontal splitter line with custom attributes*/
+.main-line{
+    width: 100%; 
+    margin-top: 4%; 
+    border: 3px solid; 
+    border-color: green;
+}
+
+/*Container for pc-parts-titles*/
+.pcparts-left{
+    width: 20%;
+    float: left;
+    margin-left: 10%;
+    color: white;
+}
+
+/*Simple attributes for the text inside the container*/
+.pc-parts-titles{
+    font-size: x-large;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container for pc-parts-names*/
+.pcparts-middle{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    color: white;
+}
+
+/*Simply attributes for names of the pc components inside the container*/
+.pc-parts-names{
+    font-size: x-large;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Container for pc-parts-buttons*/
+.pcparts-right{
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+}
+
+/*Contains button attributes for the item title names listed in pc-parts-titles*/
+.pc-parts-buttons{
+    font-size: x-large;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Simple attributes for a custom horizontal splitter line*/
+.ul-line{
+    width: 100%;  
+    border: 1px solid; 
+    border-color: blue;
+}
+
+/*class attributes made as the body of the entire page!*/
+.body{
+    background-color: rgba(17, 17, 17, 0.918);
+    text-align: center;
+}
+
+/*Attributes of a custom splitter line similar to .main-line*/
+.splitter-line{
+    width: 100%;
+    margin-top: 1%; 
+    margin-bottom: 1%;
+    border: 3px solid; 
+    border-color: green;
+}
+
+/*The table's attributes*/
+table{
+    width: 80%;
+    margin: auto;
+}
+
+/*The attributes for each cell of the table and the whole table itself (It's to establish the borders and margins)*/
+table, th, td{
+    border: 5px solid goldenrod;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: lime;
+}
+
+/*The attributes for the first column of the table*/
+.column-1{
+    width: 10%;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/*The attributes for the first row of the table*/
+.row-1{
+    font-weight: bold;
+    color: lightskyblue;
+}
+
+/*These are the edited anchor tag attributes*/
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*This changes the color of the anchor tag's text to coral whenever hovering on it!*/
+a:hover{
+    color: coral;
+}
+
+/*The background color change for the Price Breakdown Text*/
+.pb{
+    text-align: center;
+    background-color: royalblue;
+}
+
+/*Attributes for the total price part of the table*/
+.total{
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Attributes for price before tax*/
+.pbt{
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Attributes for price after tax*/
+.pat{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/*The Email Link attributes*/
+.email{
+    float: left;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+
+/*The "Back to Main" Page Link attributes*/
+.back-to-main{
+    background-color: rgb(40, 130, 204);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+/*Attributes for the Citations link class*/
+.citations-link{
+    background-color: red;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+/*Attributes for the Clear List link class*/
+.clearList{
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+
+/* LCD CLOCK STYLING. CHECK CITATIONS */
+.styling{
+    background-color:black;
+    color:lime;
+    font: bold 18px MS Sans Serif;
+    padding: 3px;
+}
+
+.clock{
+    text-align: center;
+    margin-bottom: 1%;
+}

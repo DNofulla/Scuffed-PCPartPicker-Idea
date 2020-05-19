@@ -1,0 +1,197 @@
+/*The @media tag attributes are for responsive design and better functionality on mobile devices below a width of 575 pixels*/
+@media screen and (max-width: 575px) {
+
+    .middle{
+        min-height: auto;
+        height: auto;
+    }
+    
+    .banner{
+        display: none;
+    }
+
+    .pc-parts-names{
+        margin-right: 10%;
+    }
+
+    .pc-parts-buttons{
+        margin-right: 10%;
+    }
+
+    .pc-parts-left{
+       min-width: 90%;
+       margin-left: 0;
+       margin-right: 20%;
+       margin: auto;
+    }
+
+    .pc-parts-right{
+        min-width: 90%;
+        margin-left: 0;
+        margin-right: 20%;
+        margin: auto;
+    }
+    
+    
+}
+
+
+
+/*The "Back to Main" Page Link attributes*/
+.back-to-main{
+    background-color: rgb(40, 130, 204);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+
+/*Attributes of the custom banner*/
+.banner{
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/*This is the attributes for the div class responsible for the link to my own Step-By-Step tutorial!*/
+.left{
+    background-color: rgb(88, 2, 105);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+/*This is the attributes for the div class responsible for the link to the Youtube Tutorials*/
+.right{
+    background-color: rgb(25, 90, 8);
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+/*This div simply acts as a container for the left and right div classes above*/
+.middle{
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+/*This is a horizontal splitter line with custom attributes*/
+.main-line{
+    width: 100%; 
+    margin-top: 4%; 
+    border: 3px solid; 
+    border-color: green;
+}
+
+/*class attributes made as the body of the entire page!*/
+.body{
+    background-color: rgba(17, 17, 17, 0.918);
+    text-align: center;
+}
+
+/*These are the edited anchor tag attributes*/
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*This changes the color of the anchor tag's text to coral whenever hovering on it!*/
+a:hover{
+    color: coral;
+}
+
+
+/*Simply attributes for names of the pc components inside the container*/
+.pc-parts-names{
+    font-size: 24px;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Simple attributes for a custom horizontal splitter line*/
+.ul-line{
+    width: 100%;  
+    border: 1px solid; 
+    border-color: blue;
+}
+
+/*Contains button attributes for the item title names listed in pc-parts-titles*/
+.pc-parts-buttons{
+    font-size: x-large;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Container for pc-parts-names*/
+.pc-parts-left{
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+    color: white;
+}
+
+/*Container for pc-parts-buttons*/
+.pc-parts-right{
+    width: 20%;
+    float: left;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/*The Email Link attributes*/
+.email{
+    float: left;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+
+
+/*Attributes for the Citations link class*/
+.citations-link{
+    background-color: red;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+/*Attributes for the Clear List link class*/
+.clearList{
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+/* LCD CLOCK STYLING. CHECK CITATIONS */
+.styling{
+    background-color:black;
+    color:lime;
+    font: bold 18px MS Sans Serif;
+    padding: 3px;
+}
+
+.clock{
+    text-align: center;
+    margin-bottom: 1%;
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Head Tag with the linked Stylesheet and viewport for mobile website version-->
+    <meta charset="utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "CSSMain.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Builder Main Page</title>
+</head>
+
+<body class= "body">
+    
+    <!--This is the banner for the website. It also links to the main page!-->
+    <div class = "banner">
+        <a href="MainPage.html"><img class = "banner" src="Images/banner.png" alt="The Banner"></a>
+    </div>
+
+    <!--This Div included the primary links to the tutorial pages!-->
+    <div class = "middle">
+
+        <div class = "left">
+            <a href="StepByStepPage.html"><h3>Full Step Tutorial</h3></a>
+        </div>
+
+
+        <div class = "right">  
+            <a href="YoutubeTutorials.html"><h3>Youtube Tutorials</h3></a>
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <!--This div includes a link back to the main page and Citations Page!-->
+        <div class="back-to-main">
+            <a href="MainPage.html"><h3>Main Page</h3></a>
+        </div>
+
+        <div class="citations-link">
+            <a href="Citations.html"><h3>Citations</h3></a>
+        </div>
+    </div>
+
+    <div class = "middle">
+        <!--This div includes a link back to the main page and Citations Page!-->
+        <div class="clearList">
+            <a href = "MainPage.html" onclick="clearList()"><h3>Clear List</h3></a>
+        </div>
+
+        <div class="clock">
+            <span id="digitalclock" class="styling"></span> <!-- CODE FROM DYNAMIC DRIVE FOR AN LCD CLOCK. CHECK JAVASCRIPT AND CITATIONS PAGE FOR CITATION-->
+        </div>
+    </div>
+
+    <div class="middle">
+        <!--Email Link!-->
+        <a class = "email" href="mailto:dnofulla@albany.edu">Email Me!</a>
+    </div>
+    
+
+    <hr class= "main-line">
+
+    <h3 id = "List"></h3>
+
+<div class="pc-parts">
+    <!--This div simply lists out all the parts a PC build needs, no specifics-->
+    <div class= "pcparts-left">
+        <ul class= "pc-parts-titles">
+
+            <li id = "CPU">CPU</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "CPUFan">CPU Fan</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "Motherboard">Motherboard</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "Memory">Memory</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "Storage">Storage</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "VideoCard">Video Card</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "Case">Case</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "PowerSupply">Power Supply</li>
+            <li><hr class="ul-line"></li>
+
+            <li id = "OS">Operating System</li>
+            <li><hr class="ul-line"></li>
+
+        </ul>
+    </div>
+
+    <!--This div lists the names of each part! Obviously this is a static page, so no actual parts are in the list, but that is how it will work in the future!-->
+    <div class= "pcparts-middle">
+        <ul class= "pc-parts-names">
+
+            <li><a id = "theCPU" onclick="toCPUDetails()">Processor</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theCPUFan" onclick="toCPUFanDetails()">Processor Cooler</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theMobo" onclick="toMoboDetails()">Motherboard</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theMemory" onclick="toMemoryDetails()">Memory</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theStorage" onclick="toStorageDetails()">Storage</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theGPU" onclick="toGPUDetails()">Video Card</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theCase" onclick="toCaseDetails()">Case</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "thePSU" onclick="toPSUDetails()">Power Supply</a></li>
+            <li><hr class="ul-line"></li>
+
+            <li><a id = "theOSSystem" onclick="toOSDetails()">Operating System</a></li>
+            <li><hr class="ul-line"></li>
+            
+        </ul>
+    </div>
+
+
+
+    
+    <!--These are buttons I added in order to fill in parts in the list. Obviously since this is FOR NOW
+         just a static page, the buttons will use very basic javascript in order to simply redirect to the ItemList.html page-->
+    <div class= "pcparts-right">
+        <ul class= "pc-parts-buttons">
+            <li><button id = "CPUButton" onclick="toCPUList()" type="button">Choose/Change CPU</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "CPUFanButton" onclick="toCPUFanList()" type="button">Choose/Change CPU Fan</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "MotherboardButton" onclick="toMoboList()" type="button">Choose/Change Motherboard</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "MemoryButton" onclick="toMemoryList()" type="button">Choose/Change Memory</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "StorageButton" onclick="toStorageList()" type="button">Choose/Change Storage</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "VideoCardButton" onclick="toGPUList()" type="button">Choose/Change Video Card</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "CaseButton" onclick="toCaseList()" type="button">Choose/Change Case</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "PowerSupplyButton" onclick="toPSUList()" type="button">Choose/Change Power Supply</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button id = "OSButton" onclick="toOSList()" type="button">Choose/Change Operating System</button></li>
+            <li><hr class="ul-line"></li>
+        </ul>
+    </div>
+</div>
+
+    <!--This basic javascript file allows the buttons above work using their id elements
+    <script src = "myButtonsMain.js"></script>-->
+    
+
+    
+    <!--Practically a header for Price Breakdown-->
+    <hr class= "splitter-line">
+    <h2 class="pb">Price Breakdown</h2>
+    <hr class= "splitter-line">
+
+
+    <!--This is a big table to break down the total cost of the computer build!-->
+    <table>
+        <tr>
+            <td class = "row-1">Component</td>
+            <td class = "row-1">Component Name</td>
+            <td class = "row-1">Price ($ USD)</td>
+            <td class = "row-1">Price After Tax ($ USD)</td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#CPU">CPU</a></td>
+            <td onclick="toCPUDetails()" id = "cpuname">Name of Processor</td>
+            <td id = "cpubt"></td>
+            <td id = "cpuat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#CPUFan">CPU Fan</a></td>
+            <td onclick="toCPUFanDetails()" id = "cpufanname">Name of Processor Cooler</td>
+            <td id = "cpufanbt"></td>
+            <td id = "cpufanat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#Motherboard">Motherboard</a></td>
+            <td onclick="toMoboDetails()" id = "moboname">Name of Motherboard</td>
+            <td id = "mobobt"></td>
+            <td id = "moboat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#Memory">Memory</a></td>
+            <td onclick="toMemoryDetails()" id = "memoryname">Name of Memory</td>
+            <td id = "memorybt"></td>
+            <td id = "memoryat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#Storage">Storage</a></td>
+            <td onclick="toStorageDetails()" id = "storagename">Name of Storage</td>
+            <td id = "storagebt"></td>
+            <td id = "storageat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#VideoCard">Video Card</a></td>
+            <td onclick="toGPUDetails()" id = "gpuname">Name of Video Card</td>
+            <td id = "gpubt"></td>
+            <td id = "gpuat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#Case">Case</a></td>
+            <td onclick="toCaseDetails()" id = "casename">Name of Case</td>
+            <td id = "casebt"></td>
+            <td id = "caseat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#PowerSupply">Power Supply</a></td>
+            <td onclick="toPSUDetails()" id = "psuname">Name of Power Supply</td>
+            <td id = "psubt"></td>
+            <td id = "psuat"></td>
+        </tr>
+        <tr>
+            <td class = "column-1"><a href="#OS">Operating System</a></td>
+            <td onclick="toOSDetails()" id = "osname">Name of Operating System</td>
+            <td id = "osbt"></td>
+            <td id = "osat"></td>
+        </tr>
+        <tr>
+            <td class = "total" colspan="2">Total Build Price ($ USD)</td>
+            <td id = "totbt" class = "pbt"></td>
+            <td id = "totat" class = "pat"></td>
+        </tr>
+    </table>
+    <script src="finalProjectJS1.js"></script>
+</body>
+</html>

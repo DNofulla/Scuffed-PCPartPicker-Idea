@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Head Tag with the linked Stylesheet and viewport for mobile website version-->
+  <meta charset="utf-8">
+  <link rel = "stylesheet" type = "text/css" href = "ItemsListCSS.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part Selection Page</title>
+
+</head>
+
+<body class= "body">
+    <!--This is the banner for the website. It also links to the main page!-->
+    <div class = "banner">
+        <a href="MainPage.html"><img class = "banner" src="Images/banner.png" alt="The Banner"></a>
+    </div>
+
+    <!--This Div included the primary links to the tutorial pages!-->
+    <div class = "middle">
+
+        <div class = "left">
+            <a href="StepByStepPage.html"><h3>Full Step Tutorial</h3></a>
+        </div>
+
+
+        <div class = "right">  
+            <a href="YoutubeTutorials.html"><h3>Youtube Tutorials</h3></a>
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <!--This div includes a link back to the main page and Citations Page!-->
+        <div class="back-to-main">
+            <a href="MainPage.html"><h3>Main Page</h3></a>
+        </div>
+
+        <div class="citations-link">
+            <a href="Citations.html"><h3>Citations</h3></a>
+        </div>
+    </div>
+
+    <div class = "middle">
+        <div class="clearList">
+            <a href = "MainPage.html" onclick="clearList()"><h3>Clear List</h3></a>
+        </div>
+        <div class="clock">
+            <span id="digitalclock" class="styling"></span> <!-- CODE FROM DYNAMIC DRIVE FOR AN LCD CLOCK. CHECK JAVASCRIPT AND CITATIONS PAGE FOR CITATION-->
+        </div>
+    </div>
+
+    <div class="middle">
+        <!--Email Link!-->
+        <a class = "email" href="mailto:dnofulla@albany.edu">Email Me!</a>
+    </div>
+
+
+    
+
+    <hr class= "main-line">
+
+    <h3 id = "List"></h3>
+    <!--This div simply uses an unordered list to display a list of Computer Components on the left side. 
+    Obviously it's still a static page, and there are currently not any actual computer parts listed. 
+    It's only sample text!-->
+    <div class= "pc-parts-left">
+        <ul class= "pc-parts-names">
+            <li id = "part1" onclick="findItem1Details()">PC Component 1</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part2" onclick="findItem2Details()">PC Component 2</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part3" onclick="findItem3Details()">PC Component 3</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part4" onclick="findItem4Details()">PC Component 4</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part5" onclick="findItem5Details()">PC Component 5</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part6" onclick="findItem6Details()">PC Component 6</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part7" onclick="findItem7Details()">PC Component 7</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part8" onclick="findItem8Details()">PC Component 8</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part9" onclick="findItem9Details()">PC Component 9</li>
+            <li><hr class="ul-line"></li>
+            <li id = "part10" onclick="findItem10Details()">PC Component 10</li>
+            <li><hr class="ul-line"></li>
+
+        </ul>
+    </div>
+
+    <!--This div simply uses an unordered list to display a list of Buttons on the right side. 
+        These buttons are supposed to add each respective element to the list, however since 
+        this page is still static, the buttons will just redirect to the main page using 
+        javascript scripts!-->
+    <div class= "pc-parts-right">
+        <ul class= "pc-parts-buttons">
+            <li><button onclick ="addPart1()" id = "AddButton1" type="button">Add Component 1</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart2()" id = "AddButton2" type="button">Add Component 2</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart3()" id = "AddButton3" type="button">Add Component 3</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart4()" id = "AddButton4" type="button">Add Component 4</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart5()" id = "AddButton5" type="button">Add Component 5</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart6()" id = "AddButton6" type="button">Add Component 6</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart7()" id = "AddButton7" type="button">Add Component 7</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart8()" id = "AddButton8" type="button">Add Component 8</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart9()" id = "AddButton9" type="button">Add Component 9</button></li>
+            <li><hr class="ul-line"></li>
+            <li><button onclick ="addPart10()" id = "AddButton10" type="button">Add Component 10</button></li>
+            <li><hr class="ul-line"></li>
+        </ul>
+    </div>
+
+    <!--These scripts simply make each button above redirect to the main page!-->
+    <script src="myButtonsList.js"></script>
+
+</body>
+</html>

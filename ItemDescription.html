@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Head Tag with the linked Stylesheet and viewport for mobile website version-->
+  <meta charset="utf-8">
+  <link rel = "stylesheet" type = "text/css" href = "ItemDescriptionCSS.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Description Page</title>
+
+</head>
+
+<body class= "body">
+    <!--This is the banner for the website. It also links to the main page!-->
+    <div class = "banner">
+        <a href="MainPage.html"><img class = "banner" src="Images/banner.png" alt="The Banner"></a>
+    </div>
+
+    <!--This Div included the primary links to the tutorial pages!-->
+    <div class = "middle">
+
+        <div class = "left">
+            <a href="StepByStepPage.html"><h3>Full Step Tutorial</h3></a>
+        </div>
+
+
+        <div class = "right">  
+            <a href="YoutubeTutorials.html"><h3>Youtube Tutorials</h3></a>
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <!--This div includes a link back to the main page and Citations Page!-->
+        <div class="back-to-main">
+            <a href="MainPage.html"><h3>Main Page</h3></a>
+        </div>
+
+        <div class="citations-link">
+            <a href="Citations.html"><h3>Citations</h3></a>
+        </div>
+    </div>
+
+    <div class = "middle">
+        <div class="clearList">
+            <a href = "MainPage.html" onclick="clearList()"><h3>Clear List</h3></a>
+        </div>
+
+        <div class="clock">
+            <span id="digitalclock" class="styling"></span> <!-- CODE FROM DYNAMIC DRIVE FOR AN LCD CLOCK. CHECK JAVASCRIPT AND CITATIONS PAGE FOR CITATION-->
+        </div>
+    </div>
+
+    <div class="middle">
+        <!--Email Link!-->
+        <a class = "email" href="mailto:dnofulla@albany.edu">Email Me!</a>
+    </div>
+
+    <hr class= "main-line">
+
+
+    <!--This is an image of the component being currently viewed, but since this is not a dynamic page, 
+        this image will be static and will not change until I make the site dynamic later on!-->
+    <div >
+        <img id = "image" class = "items-image" src="Images/items.jpg" alt="The Item Image">
+    </div>
+
+
+    <!--This is an ordered list of elements to display the item's details. Since the page is currently static, we simply leave it like this for now!-->
+    <h3 id = "itemName" class="idet"></h3>
+    <button onclick = "addThisItem()" id = "addThisItem"></button>
+    <div class= "details">   
+        <ol id = "DetailsList">
+            
+        </ol>
+    </div>
+    <script src = "ItemDescJS.js"></script>
+</body>
+</html>

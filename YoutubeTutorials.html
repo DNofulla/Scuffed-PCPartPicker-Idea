@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Head Tag with the linked Stylesheet and viewport for mobile website version-->
+  <meta charset="utf-8">
+  <link rel = "stylesheet" type = "text/css" href = "TutorialsCSS.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Tutorials</title>
+
+</head>
+
+<body class= "body">
+    <!--This is the banner for the website. It also links to the main page!-->
+    <div class = "banner">
+        <a href="MainPage.html"><img class = "banner" src="Images/banner.png" alt="The Banner"></a>
+    </div>
+
+    <!--This Div included the primary links to the tutorial pages!-->
+    <div class = "middle">
+
+        <div class = "left">
+            <a href="StepByStepPage.html"><h3>Step-By-Step Tutorial</h3></a>
+        </div>
+
+
+        <div class = "right">  
+            <a href="YoutubeTutorials.html"><h3>Youtube Tutorials</h3></a>
+        </div>
+    </div>
+
+    <div class="middle">
+        <!--This div includes a link back to the main page and Citations Page!-->
+        <div class="back-to-main">
+            <a href="MainPage.html"><h3>Main Page</h3></a>
+        </div>
+
+        <div class="citations-link">
+            <a href="Citations.html"><h3>Citations</h3></a>
+        </div>
+    </div>
+
+    <div class = "middle">
+        <div class="clearList">
+            <a href = "MainPage.html" onclick="clearList()"><h3>Clear List</h3></a>
+        </div>
+        <div class="clock">
+            <span id="digitalclock" class="styling"></span> <!-- CODE FROM DYNAMIC DRIVE FOR AN LCD CLOCK. CHECK JAVASCRIPT AND CITATIONS PAGE FOR CITATION-->
+        </div>
+    </div>
+
+    <div class="middle">
+        <!--Email Link!-->
+        <a class = "email" href="mailto:dnofulla@albany.edu">Email Me!</a>
+    </div>
+
+    <hr class= "main-line">
+
+
+
+    <!-- Everything from here and below is simply 4 Guides/Youtube Videos Implemented using iframes. Each video has a title listed above it 
+        with the name of the youtube channel and duration listed, and a very short description below each video-->
+
+    <h2 class = "part">How to Build a PC! Step-by-step - Bitwit (55 Minutes)</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IhX0fOUYd8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <h3 class="desc">Bitwit goes through everything a beginner needs in order to build a computer!</h3>
+    
+    <hr>
+
+    <h2 class = "part">How To Build A Gaming PC - FULL Beginners Guide - TechSource (22 Minutes)</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OZaFqY8UF6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+        <h3 class="desc">Ed shows the entire process of building a computer from scratch, and installing windows at the end!</h3>
+    
+    <hr>
+
+
+    <h2 class = "part">How to Build a Gaming PC - Beginners Guide - HardwareCanucks (20 Minutes)</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jM6kIWJAW-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <h3 class="desc">HardwareCanucks is an eduacational youtube channel that teacher people things about PCs. In this Particular tutorial they make a beginner's guide to building a PC!</h3>
+    
+
+    <hr>
+
+    <h2 class = "part">The Verge's $2000 PC Build Reaction Supercut - Omnizoa (19 Minutes)</h2>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M-2Scfj4FZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <h3 class="desc">This is a Reaction Supercut of a PC build the Verge made. This video shows how The Verge messed the computer build so badly so you do not repeat the same mistakes!</h3>
+    
+    <hr>
+
+    <script src="tutorialsJS.js"></script>
+    </body>
+</html>
